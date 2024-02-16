@@ -1,0 +1,17 @@
+# Function to calculate the factorial of a number
+def calculate_factorial(number):
+    if number == 0 or number == 1:
+        return 1
+    else:
+        return number * calculate_factorial(number - 1)
+
+# Taking input for the number
+num = int(input("Enter a number to calculate its factorial: "))
+
+# Checking if the input is non-negative
+if num < 0:
+    print("Factorial is not defined for negative numbers.")
+else:
+    # Calculating and displaying the factorial
+    factorial_result = calculate_factorial(num)
+    print(f"The factorial of {num} is: {factorial_result}")

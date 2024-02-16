@@ -1,0 +1,19 @@
+# Function to merge and sort two lists
+def merge_and_sort_lists(list1, list2):
+    merged_list = list1 + list2
+    sorted_list = sorted(merged_list)
+    return sorted_list
+
+# Taking user input for the two lists
+list1 = input("Enter elements of the first list (comma-separated): ").split(',')
+list2 = input("Enter elements of the second list (comma-separated): ").split(',')
+
+# Converting input to integers (assuming numeric input)
+list1 = [int(x) for x in list1]
+list2 = [int(x) for x in list2]
+
+# Merging and sorting the lists
+result = merge_and_sort_lists(list1, list2)
+
+# Displaying the sorted merged list
+print("Merged and sorted list:", result)

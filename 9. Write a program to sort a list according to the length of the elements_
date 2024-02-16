@@ -1,0 +1,12 @@
+# Function to sort a list according to the length of elements
+def sort_by_length(input_list):
+    return sorted(input_list, key=len)
+
+# Taking user input for the list
+user_list = input("Enter elements of the list (comma-separated): ").split(',')
+
+# Sorting the list according to the length of elements
+sorted_list = sort_by_length(user_list)
+
+# Displaying the sorted list
+print("List sorted by length of elements:", sorted_list)

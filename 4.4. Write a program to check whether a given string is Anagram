@@ -1,0 +1,22 @@
+# Function to check if two strings are anagrams
+def are_anagrams(str1, str2):
+    # Removing spaces and converting to lowercase for case-insensitive comparison
+    cleaned_str1 = ''.join(str1.split()).lower()
+    cleaned_str2 = ''.join(str2.split()).lower()
+
+    # Sorting the characters in both strings
+    sorted_str1 = sorted(cleaned_str1)
+    sorted_str2 = sorted(cleaned_str2)
+
+    # Checking if the sorted strings are equal
+    return sorted_str1 == sorted_str2
+
+# Taking user input for the two strings
+string1 = input("Enter the first string: ")
+string2 = input("Enter the second string: ")
+
+# Checking if the strings are anagrams
+if are_anagrams(string1, string2):
+    print("The given strings are anagrams.")
+else:
+    print("The given strings are not anagrams.")

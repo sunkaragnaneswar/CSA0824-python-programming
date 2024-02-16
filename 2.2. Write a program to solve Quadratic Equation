@@ -1,0 +1,23 @@
+import cmath
+
+# Function to solve the quadratic equation
+def solve_quadratic(a, b, c):
+    # Calculate the discriminant
+    discriminant = cmath.sqrt(b**2 - 4*a*c)
+
+    # Calculate the two solutions
+    root1 = (-b + discriminant) / (2*a)
+    root2 = (-b - discriminant) / (2*a)
+
+    return root1, root2
+
+# Taking user input for coefficients of the quadratic equation
+a = float(input("Enter the coefficient of x^2: "))
+b = float(input("Enter the coefficient of x: "))
+c = float(input("Enter the constant term: "))
+
+# Solving the quadratic equation
+roots = solve_quadratic(a, b, c)
+
+# Displaying the results
+print(f"The roots of the quadratic equation are: {roots[0]} and {roots[1]}")

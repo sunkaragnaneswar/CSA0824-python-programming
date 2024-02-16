@@ -1,0 +1,18 @@
+# Function to find the sum of N numbers
+def calculate_sum_of_numbers(n):
+    sum_of_numbers = 0
+
+    for i in range(n):
+        num = float(input(f"Enter number {i + 1}: "))
+        sum_of_numbers += num
+
+    return sum_of_numbers
+
+# Taking user input for the value of N
+n = int(input("Enter the value of N: "))
+
+# Calculating the sum of N numbers
+result = calculate_sum_of_numbers(n)
+
+# Displaying the result
+print(f"The sum of {n} numbers is: {result}")

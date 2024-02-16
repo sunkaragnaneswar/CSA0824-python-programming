@@ -1,0 +1,35 @@
+# Function to calculate the grade based on marks
+def calculate_grade(marks):
+    if marks >= 90:
+        return 'A'
+    elif 80 <= marks < 90:
+        return 'B'
+    elif 70 <= marks < 80:
+        return 'C'
+    elif 60 <= marks < 70:
+        return 'D'
+    else:
+        return 'F'
+
+# Function to calculate the average marks
+def calculate_average(marks_list):
+    return sum(marks_list) / len(marks_list)
+
+# Taking input for the number of subjects
+num_subjects = int(input("Enter the number of subjects: "))
+
+# Taking input for each subject's marks
+marks_list = []
+for i in range(num_subjects):
+    marks = float(input(f"Enter marks for Subject {i+1}: "))
+    marks_list.append(marks)
+
+# Calculating average marks
+average_marks = calculate_average(marks_list)
+
+# Calculating grade based on the average marks
+grade = calculate_grade(average_marks)
+
+# Displaying results
+print(f"Average marks: {average_marks:.2f}")
+print(f"Grade: {grade}")

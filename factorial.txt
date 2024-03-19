@@ -1,0 +1,15 @@
+def calculate_factorial(number):
+    if number == 0 or number == 1:
+        return 1
+    else:
+        factorial = 1
+        for i in range(1, number + 1):
+            factorial *= i
+        return factorial
+
+# Input: Number for which factorial is to be calculated
+num = int(input("Enter a number: "))
+
+# Calculate and print the factorial
+result = calculate_factorial(num)
+print(f"The factorial of {num} is: {result}")

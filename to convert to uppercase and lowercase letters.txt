@@ -1,0 +1,16 @@
+def convert_to_upper_and_lower(input_string):
+    # Convert to uppercase
+    uppercase_result = input_string.upper()
+
+    # Convert to lowercase
+    lowercase_result = input_string.lower()
+
+    return uppercase_result, lowercase_result
+
+# Input: String
+input_string = input("Enter a string: ")
+
+# Convert and print to uppercase and lowercase
+uppercase, lowercase = convert_to_upper_and_lower(input_string)
+print(f"Uppercase: {uppercase}")
+print(f"Lowercase: {lowercase}")

@@ -1,0 +1,20 @@
+import cmath  # Importing complex math module for handling complex roots
+
+def solve_quadratic_equation(a, b, c):
+    # Calculate the discriminant
+    discriminant = cmath.sqrt(b**2 - 4*a*c)
+
+    # Calculate the solutions
+    root1 = (-b + discriminant) / (2*a)
+    root2 = (-b - discriminant) / (2*a)
+
+    return root1, root2
+
+# Input: Coefficients of the quadratic equation (a, b, c)
+a = float(input("Enter the coefficient 'a': "))
+b = float(input("Enter the coefficient 'b': "))
+c = float(input("Enter the coefficient 'c': "))
+
+# Calculate and print the roots
+roots = solve_quadratic_equation(a, b, c)
+print(f"The roots of the quadratic equation are: {roots}")

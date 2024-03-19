@@ -1,0 +1,15 @@
+def count_words_starting_with_t(input_string):
+    # Split the string into words
+    words = input_string.split()
+
+    # Count the words starting with "T" (case-insensitive)
+    count_t_words = sum(1 for word in words if word.lower().startswith('t'))
+
+    return count_t_words
+
+# Input: String
+input_string = input("Enter a string: ")
+
+# Count and print the words starting with "T"
+result = count_words_starting_with_t(input_string)
+print(f"The number of words starting with 'T': {result}")

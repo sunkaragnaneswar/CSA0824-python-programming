@@ -1,0 +1,18 @@
+def sort_words(sentence):
+    # Split the sentence into a list of words
+    words = sentence.split()
+
+    # Sort the words in alphabetical order
+    sorted_words = sorted(words)
+
+    # Join the sorted words into a new sentence
+    sorted_sentence = ' '.join(sorted_words)
+
+    return sorted_sentence
+
+# Input: Sentence containing words to be sorted
+input_sentence = input("Enter a sentence: ")
+
+# Sort the words and print the result
+result = sort_words(input_sentence)
+print("Sorted words:", result)

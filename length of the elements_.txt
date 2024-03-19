@@ -1,0 +1,15 @@
+def sort_by_length(input_list):
+    # Sort the list based on the length of each element
+    sorted_list = sorted(input_list, key=len)
+    
+    return sorted_list
+
+# Input: List of elements
+input_list = input("Enter a list of elements (comma-separated): ").split(',')
+
+# Remove leading and trailing whitespaces from each element
+input_list = [element.strip() for element in input_list]
+
+# Sort the list by length and print the result
+result = sort_by_length(input_list)
+print("Sorted list by length:", result)

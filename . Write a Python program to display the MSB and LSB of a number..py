@@ -1,0 +1,4 @@
+
+s=input("enter number:")
+print("lsb:",s[0])
+print("msb:",s[-1])
